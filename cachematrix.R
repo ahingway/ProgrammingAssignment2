@@ -38,7 +38,7 @@ cacheSolve <- function(x, ...) {
     message("getting cached data")
     return(inv)
   }
-  ## if no value is found in cache, calculate inverse and store in memory
+  ## if no value is found in cache, calculate inverse and store in memoryit
   data <- x$get()
   inv <- solve (data)
   x$setinverse(inv)
